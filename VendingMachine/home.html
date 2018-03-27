@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css" />
+
+
+    <title>Vending Machine</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Vending Machine</h1>
+        <hr />
+
+        <div class="row">
+            <!--Items-->
+            <div class="col-md-8 card">
+                <div id="listHeader">
+                    <h1>Snack List</h1>
+                    <div id="errorMessages"></div>
+                    <hr />
+                </div>
+                
+
+                <div id="item-display" class="col-md-12 row" style="padding: -4px"></div>
+            </div>
+
+            <!--Buttons & Inputs-->
+            <div class="col-md-4 card">
+
+                <!--Money Buttons-->
+                <form class="form" role="form" id="money-form">
+                    <div class="form-group">
+                        <label for="total-box" class="col-md-12 control-lable" id="total-box-lable">
+                            <h3>Total $ In</h3>
+                        </label>
+                        <!--Total Amount Display-->
+                        <div>
+                            <input type="text" class="form-control" id="total-box" placeholder="$0.00" readonly/>
+                        </div>
+                    </div>
+
+                    <!--Add Money Buttons-->
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <button type="button" id="add-dollar-button" class="btn btn-success">Add Dollar</button>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <button type="button" id="add-quarter-button" class="btn btn-success">Add Quarter</button>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <button type="button" id="add-dime-button" class="btn btn-success">Add Dime</button>
+                        </div>
+                        <div class=" form-group col-md-6">
+                            <button type="button" id="add-nickle-button" class="btn btn-success">Add Nickle</button>
+                        </div>
+                    </div>
+
+                </form>
+                <hr />
+
+                <!--Messages-->
+                <form class="form" role="form" id="messages-form">
+                    <!--Message Display-->
+                    <div class="form-group">
+                        <lable for="message-box" class="col-md-12 control-lable" id="message-box-lable">
+                            <h3>Messages</h3>
+                        </lable>
+                        <div>
+                            <input type="text" class="form-control" id="message-box" placeholder='(づ｡ ◕‿‿◕｡)づ   "mmmm snacks!"' readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="item-box" class="col-md-3 control-lable" id="item-box-lable">
+                            <h4>Item:</h4>
+                        </label>
+
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="item-box" placeholder='Item #' />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="purchase-button" class="btn btn-primary col-md-12">Make Purchase</button>
+                    </div>
+                </form>
+                <hr />
+
+                <!--Change-->
+                <form class="form" role="form" id="change-form">
+
+                    <!--Change Display-->
+                    <div class="form-group">
+                        <label for="change-box" class="col-md-12 control-lable" id="change-box-lable">
+                            <h3>Change</h3>
+                        </label>
+                        <div>
+                            <input type="text" class="form-control" id="change-box" placeholder="$0.00" readonly/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="change-button" class="btn btn-default col-md-12">Change Return</button>
+                    </div>
+                </form>
+                <hr />
+            </div>
+        </div>
+
+    </div>
+
+    <div id="svg1">
+
+    </div>
+    <div id="svg2">
+
+    </div>
+
+    <div id="svg3">
+        
+    </div>
+
+
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.4/svg.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/home.js"></script>
+</body>
+
+</html>

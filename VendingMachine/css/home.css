@@ -1,0 +1,24 @@
+h1, h2, h3{
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+ }
+
+ input { 
+    text-align: center; 
+}
+
+ .item-Button{
+    height: 100%;
+    width: 100%;
+}
+
+.itemName{
+    text-align: center;
+}
+
+.itemPrice{
+    text-align: center;
+}
