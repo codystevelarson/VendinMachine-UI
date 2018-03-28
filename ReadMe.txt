@@ -1,6 +1,6 @@
 ::Vending Machine::
 
-YAY SNACKS!!
+(づ｡ ◕‿‿◕｡)づ YAY SNACKS!!
 
 A UI driven by a Spring server.
 
