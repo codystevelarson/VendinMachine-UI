@@ -2,7 +2,7 @@
 
 (づ｡ ◕‿‿◕｡)づ YAY SNACKS!!
 
-A UI driven by a Spring server.
+A UI driven by AJAX calls to a Spring server.
 
 - The user is able to add money and select snacks. 
 - The user is able to buy a snack if enough money is added
